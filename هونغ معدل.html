@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هونج كونج</title>
+    <style>
+        /* إعدادات عامة */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            background-color: #f9f9f9; /* خلفية فاتحة */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* شريط الأزرار العلوي */
+        .top-bar {
+            width: 100%;
+            background-color: #0078d4;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .top-bar img {
+            height: 90px;
+        }
+
+        .top-bar .button-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn {
+            padding: 8px 15px;
+            font-size: 14px;
+            color: #fff;
+            background-color: #00aaff;
+            border: none;
+            border-radius: 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background-color: #005f9e;
+        }
+
+        /* المحتوى الرئيسي */
+        main {
+            margin-top: 80px; /* لضمان عدم تغطية المحتوى بشريط العلوي */
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #004e92;
+        }
+
+        img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: #0078d4;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        /* شريط سفلي */
+        .footer {
+            width: 100%;
+            background-color: #0078d4;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- شريط الأزرار العلوي -->
+    <div class="top-bar">
+        <img src="images/لوغو.png" alt="الشعار">
+        <div class="button-container">
+            <a href="HOME.html" class="btn">Home</a>
+            <a href="HOME.html" class="btn">Before</a>
+            <a href="ماكاو.html" class="btn">Next</a>
+        </div>
+    </div>
+
+    <!-- المحتوى الرئيسي -->
+    <main>
+        <h1>هونج كونج</h1>
+        <img src="images/هونغ كونغ 11.jpg" alt="منظر هونغ كونغ">
+        <p>
+            هونغ كونغ هي واحدة من أكثر المناطق ازدحامًا وحيوية في العالم. تقع على الساحل الجنوبي للصين، 
+            وتعتبر من أهم المراكز الاقتصادية والمالية في آسيا والعالم. تتمتع بمزيج فريد من الثقافات الشرقية والغربية، 
+            ما يجعلها وجهة مميزة للسياحة والتجارة.
+        </p>
+        <h2>معلومات عامة عن هونغ كونغ:</h2>
+        <p>الموقع الجغرافي: تقع في دلتا نهر اللؤلؤة على ساحل جنوب الصين</p>
+        <p>المساحة: حوالي 1,104 كيلومترات مربعة</p>
+        <p>عدد السكان: حوالي 7.5 مليون نسمة (2024)</p>
+        <p>اللغة الرسمية: الصينية (الكانتونية) والإنجليزية</p>
+        <p>العملة: دولار هونغ كونغ</p>
+        <h2>أماكن للسياحة في هونج كونج</h2>
+        <p>قمة فيكتوريا: واحدة من أشهر الأماكن السياحية، توفر إطلالات بانورامية خلابة على المدينة والميناء</p>
+        <p>جزيرة لانتاو: تضم تمثال بوذا الكبير وديزني لاند هونغ كونغ</p>
+        <p>شارع النجوم: مماثل لممر الشهرة في هوليوود، يكرم أبرز نجوم السينما الصينية</p>
+        <p>مرفأ فيكتوريا: يعد أحد أكثر الموانئ ازدحامًا في العالم</p>
+    </main>
+
+    <!-- الشريط السفلي -->
+    <div class="footer">
+        <p>من تصميم (ضياء صالح , احمد برغال)</p>
+    </div>
+</body>
+</html>

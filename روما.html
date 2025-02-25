@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>روما</title>
+    <style>
+          /* إعدادات عامة */
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background: linear-gradient(45deg, #004e92, #000428, #0652dd);
+            background-size: 400% 400%;
+            animation: gradientBackground 15s ease infinite;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px #fff, 0 0 20px #4caf50, 0 0 30px #4caf50;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin: 30px 0 20px;
+            text-shadow: 0 0 10px #ffffff;
+        }
+
+        h3, h4, h5 {
+            margin-top: 15px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            max-width: 700px;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+         /* أزرار الانتقال الاحترافية */
+     .button-container {
+            display: flex;
+            flex-wrap: wrap; /* يسمح بتقسيم الأزرار إلى أكثر من صف */
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+
+        .btn {
+            position: relative;
+            display: inline-block;
+            padding: 12px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 50px;
+            background: linear-gradient(90deg, #0f9b0f, #00c9ff);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(0);
+            transition: transform 0.3s;
+            border-radius: 50px;
+            filter: blur(5px);
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:hover::before {
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+     <!-- زر Home -->
+     <P></P>
+     <P></P>
+     <div class="home-container">
+        <a href="HOME.html" class="btn">Home</a>
+    </div>
+    <!-- أزرار الانتقال -->
+    <P></P>
+    <P></P>
+    <div class="button-container">
+        <a href="ماكاو.html" class="btn">BEFORE</a>
+        <a href="مدريد.html" class="btn">NEXT</a>
+
+    </div>
+
+    <!-- محتوى روما -->
+    <h1> روما</h1>
+    <img src="images/روما 11.jpg" alt="Rome City">
+    <p>روما هي عاصمة إيطاليا، مدينة تجمع بين التاريخ والثقافة والجمال. تُعرف باسم "المدينة الخالدة" وهي مهد الحضارة الرومانية القديمة ومقر الفاتيكان، أحد أقدس الأماكن في العالم.</p>
+
+    <h2>معلومات عامة عن روما:</h2>
+    <p>الموقع الجغرافي: تقع روما في منطقة لاتسيو، وسط إيطاليا، على ضفاف نهر التيبر.</p>
+    <p>المساحة: حوالي 1,285 كيلومترًا مربعًا.</p>
+    <p>عدد السكان: حوالي 3 ملايين نسمة (2024).</p>
+    <p>اللغة الرسمية: الإيطالية.</p>
+    <p>العملة: اليورو (€).</p>
+
+    <h2>أماكن للسياحة في روما</h2>
+    <p>الكولوسيوم: مدرج روماني عريق كان يُستخدم لمعارك المصارعين والعروض العامة، وهو رمز للإمبراطورية الرومانية.</p>
+    <p>البانثيون: معبد روماني قديم يتميز بتصميم معماري مذهل.</p>
+    <p>نافورة تريفي: واحدة من أجمل النوافير في العالم. يقال إن رمي عملة معدنية فيها يضمن عودتك إلى روما.</p>
+    <p>ساحة نافونا: ساحة رائعة تجمع بين الأسواق والمطاعم والمباني ذات الطراز الباروكي.</p>
+    <p>الفاتيكان: موطن الكنيسة الكاثوليكية ويضم كاتدرائية القديس بطرس ومتحف الفاتيكان.</p>
+</body>
+</html>

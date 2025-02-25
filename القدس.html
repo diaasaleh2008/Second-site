@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القدس</title>
+    <style>
+         /* إعدادات عامة */
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            background: linear-gradient(45deg, #004e92, #000428, #0652dd);
+            background-size: 400% 400%;
+            animation: gradientBackground 15s ease infinite;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px #fff, 0 0 20px #4caf50, 0 0 30px #4caf50;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin: 30px 0 20px;
+            text-shadow: 0 0 10px #ffffff;
+        }
+
+        h3, h4, h5 {
+            margin-top: 15px;
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            max-width: 700px;
+            line-height: 1.6;
+        }
+
+        img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+        }
+
+         /* أزرار الانتقال الاحترافية */
+     .button-container {
+            display: flex;
+            flex-wrap: wrap; /* يسمح بتقسيم الأزرار إلى أكثر من صف */
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+
+        .btn {
+            position: relative;
+            display: inline-block;
+            padding: 12px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 50px;
+            background: linear-gradient(90deg, #0f9b0f, #00c9ff);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(0);
+            transition: transform 0.3s;
+            border-radius: 50px;
+            filter: blur(5px);
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn:hover::before {
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+     <!-- زر Home -->
+     <P></P>
+     <P></P>
+     <div class="home-container">
+        <a href="HOME.html" class="btn">Home</a>
+    </div>
+    <!-- أزرار الانتقال -->
+    <P></P>
+    <P></P>
+    <div class="button-container">
+        <a href="دبي.html" class="btn">BEFORE</a>
+        <a href="برشلونة.html" class="btn">NEXT</a>
+
+    </div>
+
+    <!-- محتوى القدس -->
+    <h1>القدس</h1>
+    <img src="images/القدس 11.jpg" alt="Jerusalem View">
+    <p>القدس هي مدينة مقدسة تحمل أهمية دينية وتاريخية كبيرة لدى الديانات السماوية الثلاث: الإسلام، المسيحية، واليهودية. تُعرف بأنها "مدينة السلام"، رغم تاريخها المليء بالأحداث والصراعات.</p>
+
+    <h2>معلومات عامة عن القدس:</h2>
+    <p>الموقع الجغرافي: تقع في المنطقة الجبلية بفلسطين، وتُعتبر نقطة التقاء بين قارتي آسيا وأفريقيا</p>
+    <p>المساحة: حوالي 125 كيلومتر مربع</p>
+    <p>عدد السكان: حوالي 900,000 نسمة (2024)</p>
+    <p>اللغة الرسمية: العربية والعبرية</p>
+    <p>العملة: الشيكل الإسرائيلي الجديد</p>
+    <h2>أماكن للسياحة في القدس</h2>
+    <p>المسجد الأقصى وقبة الصخرة: من أقدس المواقع الإسلامية، ويُعتبر أولى القبلتين وثالث الحرمين الشريفين</p>
+    <p>كنيسة القيامة: موقع مقدس للمسيحيين ويُعتقد أنها بُنيت في المكان الذي صُلب فيه السيد المسيح</p>
+    <p>حائط البراق: مكان مقدس للمسلمين بجانب المسجد الأقصى</p>
+    <p>سوق البلدة القديمة: منطقة نابضة بالتاريخ، تُوفر تجربة مميزة للتسوق وسط أجواء تقليدية</p>
+</body>
+</html>
